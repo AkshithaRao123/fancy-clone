@@ -3,7 +3,7 @@ import FANCY_LOGO from '../assets/fancy-white-logo.svg';
 const Navbar = () => {
     return (
         <div className='w-full fixed z-10'>
-            <div className='p-5 m-5 blur_navbar rounded-full flex flex-row justify-between'>
+            <div className='p-2.5 m-2.5 blur_navbar rounded-full flex flex-row justify-between'>
                 <img src={FANCY_LOGO} alt="Fancy Logo" />
                 <div>
                     <ul className='text-white flex flex-row'>
