@@ -58,6 +58,33 @@ button:focus-visible {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.marquee {
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(-150%) scale(2);
+  }
+  100% {
+    transform: translateX(150%) scale(2);
+  }
+}
+
+/* .marquee2 {
+  animation: marquee 10s linear 14s infinite;
+}
+
+@keyframes marquee2 {
+  0% {
+    transform: translateX(-150%) scale(2);
+  }
+  100% {
+    transform: translateX(150%) scale(2);
+  }
+} */
+
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
