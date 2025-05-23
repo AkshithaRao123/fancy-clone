@@ -10,6 +10,16 @@ export const observer = new IntersectionObserver(
     }
 )
 
-
+export const processObserver = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting) {
+                entry.target.classList.add("stop_scrolling");
+            } else {
+                entry.target.classList.remove("stop_scrolling");
+            }
+        })
+    }
+)
 
 

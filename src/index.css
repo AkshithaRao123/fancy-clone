@@ -119,6 +119,11 @@ button:focus-visible {
   }
 }
 
+/* .stop_scrolling {
+  height: 100%;
+  overflow: hidden;
+} */
+
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -133,3 +138,45 @@ button:focus-visible {
   }
 }
 
+/* Test */
+.movingBorder {
+  border-left: solid 5px #dc1bd9;
+  position: relative;
+  animation: changeBorders linear;
+  animation-timeline: scroll(y)
+}
+
+@keyframes changeBorders {
+  0% {
+    border-left: solid 5px #dc1bd9;
+  }
+  100% {
+    border-left: solid 5px #dc1bd9;
+  }
+}
+
+.movingBorder::after {
+  width: 5px;
+  background-color: #e3bbe0;
+  height: 0px;
+  position: absolute;
+  bottom: 0;
+  left: -5px;
+  z-index: 1;
+  animation: movedown linear;
+  animation-timeline: scroll(y);
+  animation-fill-mode: forwards;
+  content: '';
+  display: inline-block;
+}
+
+@keyframes movedown {
+  0% {
+    height: calc(100% + 10px);
+    width: 5px;
+  }
+  100% {
+    height: 0%;
+    width: 5px;
+  }
+}
