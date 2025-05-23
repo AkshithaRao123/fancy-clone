@@ -64,25 +64,60 @@ button:focus-visible {
 
 @keyframes marquee {
   0% {
-    transform: translateX(-150%) scale(2);
+    transform: translateX(0%) scale(2);
   }
   100% {
-    transform: translateX(150%) scale(2);
+    transform: translateX(-150%) scale(2);
   }
 }
 
-/* .marquee2 {
-  animation: marquee 10s linear 14s infinite;
+.slide-in-bottom {
+	-webkit-animation: slide-in-bottom 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bottom 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-@keyframes marquee2 {
+@-webkit-keyframes slide-in-bottom {
   0% {
-    transform: translateX(-150%) scale(2);
+    -webkit-transform: translateY(70px);
+            transform: translateY(70px);
+    opacity: 0;
   }
   100% {
-    transform: translateX(150%) scale(2);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
   }
-} */
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(70px);
+            transform: translateY(70px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.change_border_colour {
+  animation: change_border_colour linear;
+  animation-timeline: scroll(y);
+}
+
+@keyframes change_border_colour {
+  0% {
+    border-color: #e8e0e7;
+  }
+  50% {
+    border-color: #e3bbe0;
+  }
+  100% {
+    border-color: #ec00cc;
+  }
+}
 
 
 @media (prefers-color-scheme: light) {
