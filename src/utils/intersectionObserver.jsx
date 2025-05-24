@@ -14,9 +14,9 @@ export const processObserver = new IntersectionObserver(
     entries => {
         entries.forEach(entry => {
             if(entry.isIntersecting) {
-                entry.target.classList.add("stop_scrolling");
+                entry.target.classList.add("movingBorder");
             } else {
-                entry.target.classList.remove("stop_scrolling");
+                entry.target.classList.remove("movingBorder");
             }
         })
     }

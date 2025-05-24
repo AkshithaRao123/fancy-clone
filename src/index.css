@@ -102,7 +102,7 @@ button:focus-visible {
 }
 
 
-.change_border_colour {
+/* .change_border_colour {
   animation: change_border_colour linear;
   animation-timeline: scroll(y);
 }
@@ -117,7 +117,7 @@ button:focus-visible {
   100% {
     border-color: #ec00cc;
   }
-}
+} */
 
 /* .stop_scrolling {
   height: 100%;
@@ -149,15 +149,17 @@ button:focus-visible {
 @keyframes changeBorders {
   0% {
     border-left: solid 5px #dc1bd9;
+    opacity: 10%;
   }
   100% {
     border-left: solid 5px #dc1bd9;
+    opacity: 100%;
   }
 }
 
 .movingBorder::after {
   width: 5px;
-  background-color: #e3bbe0;
+  background-color: #e1cae0;
   height: 0px;
   position: absolute;
   bottom: 0;
@@ -172,7 +174,7 @@ button:focus-visible {
 
 @keyframes movedown {
   0% {
-    height: calc(100% + 10px);
+    height: calc(100% + 30px);
     width: 5px;
   }
   100% {

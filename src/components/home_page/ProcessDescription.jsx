@@ -4,14 +4,14 @@ import { processObserver } from "../../utils/intersectionObserver";
 
 const ProcessDescription = () => {
     useEffect(() => {
-            document.querySelectorAll("body").forEach((section) => {
+            document.querySelectorAll("#process").forEach((section) => {
                 processObserver.observe(section);
             });
         }, []);
 
     return (
-        <div className="w-2/3 px-20">
-            <div id="process" className="border-l-4 pl-15 movingBorder">
+        <div className="w-2/3 px-20 sticky h-[200%] top-50">
+            <div id="process" className="border-l-4 pl-15">
                 <div className="pb-10">
                     <h1 className="font-bold text-6xl">Start Subscription</h1>
                     <p className="font-semibold text-2xl py-5">Just book a call</p>
