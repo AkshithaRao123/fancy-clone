@@ -13,7 +13,6 @@ const Home = () => {
 
     return (
         <div>
-            <Navbar />
             <Header />
             <div className="w-2/3 px-20 py-40">
                 <h1 id="slogan_move_up" className="font-semibold text-8xl">Let's start right</h1>
@@ -22,6 +21,26 @@ const Home = () => {
             </div>
             <ProcessDescription />
             <div className="h-[900px]">
+                <p>sdfjsdjsf</p><br />
+                <p>sdfjsdjsf</p><br />
+                <p>sdfjsdjsf</p><br />
+                <p>sdfjsdjsf</p><br />
+                <p>sdfjsdjsf</p><br />
+                <p>sdfjsdjsf</p><br />
+                <p>sdfjsdjsf</p><br />
+                <p>sdfjsdjsf</p><br />
+                <p>sdfjsdjsf</p><br />
+                <p>sdfjsdjsf</p><br />
+                <p>sdfjsdjsf</p><br />
+                <p>sdfjsdjsf</p><br />
+                <p>sdfjsdjsf</p><br />
+                <p>sdfjsdjsf</p><br />
+                <p>sdfjsdjsf</p><br />
+                <p>sdfjsdjsf</p><br />
+                <p>sdfjsdjsf</p><br />
+                <p>sdfjsdjsf</p><br />
+                <p>sdfjsdjsf</p><br />
+                <p>sdfjsdjsf</p><br />
                 <p>sdfjsdjsf</p><br />
                 <p>sdfjsdjsf</p><br />
                 <p>sdfjsdjsf</p><br />

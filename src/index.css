@@ -15,6 +15,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* body.scroll-lock {
+  overflow: hidden;
+} */
+
 li {
   padding: 10px;
   align-items: center;
@@ -203,7 +207,7 @@ button:hover {
 
 @keyframes movedown {
   0% {
-    height: calc(100% + 30px);
+    height: calc(100% + 10px);
     width: 5px;
   }
 

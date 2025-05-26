@@ -1,8 +1,12 @@
-import Home from './components/home_page/Home'
+import { Outlet } from 'react-router-dom';
+import Navbar from './components/Navbar';
 
 const App = () => {
   return (
-    <Home />
+    <div>
+      <Navbar />
+      <Outlet />
+    </div>
   )
 }
 

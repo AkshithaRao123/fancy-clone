@@ -15,10 +15,14 @@ export const processObserver = new IntersectionObserver(
         entries.forEach(entry => {
             if(entry.isIntersecting) {
                 entry.target.classList.add("movingBorder");
+                // document.body.classList.add('scroll-lock');
             } else {
                 entry.target.classList.remove("movingBorder");
             }
         })
+    },
+    {
+        threshold: 1,
     }
 )
 
