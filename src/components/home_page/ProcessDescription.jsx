@@ -10,7 +10,7 @@ const ProcessDescription = () => {
     }, []);
 
     return (
-        <div className="w-2/3 px-20 sticky h-[200vh] top-30 flex flex-row">
+        <div className="w-screen px-20 sticky h-[90vh] top-30 flex flex-row">
             <div>
                 <div id="process" className="border-l-4 pl-15">
                     <div className="pb-10">
@@ -35,7 +35,7 @@ const ProcessDescription = () => {
                     </button>
                 </div>
             </div>
-            <div>
+            <div className="flex justify-center w-full">
                 <h1>test test</h1>
             </div>
         </div>

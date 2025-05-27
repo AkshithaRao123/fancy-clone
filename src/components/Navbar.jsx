@@ -1,4 +1,5 @@
 import FANCY_LOGO from '../assets/fancy-white-logo.svg';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -7,15 +8,27 @@ const Navbar = () => {
                 <img src={FANCY_LOGO} alt="Fancy Logo" />
                 <div>
                     <ul className='text-white flex flex-row'>
-                        <li>Subscription</li>
-                        <li>Services</li>
+                        <li>
+                            <Link to="/">
+                                Subscription
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/services">
+                                Services
+                            </Link>
+                        </li>
                         <li>Pricing</li>
-                        <li>Works</li>
+                        <li>
+                            <Link to="/works">
+                                Works
+                            </Link>
+                        </li>
                         <li>About us</li>
                         <li>FAQ</li>
                     </ul>
                 </div>
-                
+
                 <button className='z-12'>Let's talk</button>
             </div>
         </div>
