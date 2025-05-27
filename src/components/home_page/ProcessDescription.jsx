@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { processObserver } from "../../utils/intersectionObserver";
+import { ICECREAM_URL } from "../../utils/constants";
 
 
 const ProcessDescription = () => {
@@ -10,8 +11,8 @@ const ProcessDescription = () => {
     }, []);
 
     return (
-        <div className="w-screen px-20 sticky h-[90vh] top-30 flex flex-row">
-            <div className="w-2/3">
+        <div className="w-screen px-20 relative h-[3000vh] flex flex-row">
+            <div className="w-2/3 sticky top-30 h-[100vh]">
                 <div id="process" className="border-l-4 pl-15">
                     <div className="pb-10">
                         <h1 className="font-bold text-5xl">Start Subscription</h1>
@@ -36,7 +37,7 @@ const ProcessDescription = () => {
                 </div>
             </div>
             <div className="flex justify-center w-full">
-                <h1>test test</h1>
+                <video src={ICECREAM_URL} autoPlay loop muted className="relative -top-120" />
             </div>
         </div>
     )
